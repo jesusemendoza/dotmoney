@@ -269,3 +269,150 @@ Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"].
 Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.122 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:40  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+
+  [36m17[0m  [36m(defn atom-input [value][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value @value[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                       ^--- Use of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet][0m
+  [36m23[0m  [36m  (let [val wallet][0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:78  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/wallet[0m
+
+  [36m17[0m  [36m(defn atom-input [value][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value @value[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                                                             ^--- Use of undeclared Var dotmoney.components/wallet[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet][0m
+  [36m23[0m  [36m  (let [val wallet][0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.936 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:40  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+
+  [36m17[0m  [36m(defn atom-input [value][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value @value[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                       ^--- Use of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet][0m
+  [36m23[0m  [36m  (let [val wallet][0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:78  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/wallet[0m
+
+  [36m17[0m  [36m(defn atom-input [value][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value @value[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                                                             ^--- Use of undeclared Var dotmoney.components/wallet[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet][0m
+  [36m23[0m  [36m  (let [val wallet][0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.306 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:40  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+
+  [36m17[0m  [36m(defn atom-input [wallet][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value wallet[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                       ^--- Use of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet][0m
+  [36m23[0m  [36m  (let [val wallet][0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.335 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.874 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.889 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:20  column:40  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+
+  [36m17[0m  [36m(defn atom-input [wallet][0m
+  [36m18[0m  [36m  [:input {:type "text"[0m
+  [36m19[0m  [36m           :value wallet[0m
+  [33m20[0m  [1m           :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])[0m
+  [0m  [0m  [33m                                       ^--- Use of undeclared Var dotmoney.components/EVENTCHANNEL[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [wallet EVENTCHANNEL][0m
+  [36m23[0m  [36m      [:div[0m
+  [36m24[0m  [36m       [:p "The value is now: " wallet][0m
+  [36m25[0m  [36m       [:p "Change it here: " [atom-input wallet EVENTCHANNEL]]])[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.187 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.974 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.026 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.02 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.463 seconds.[0m
+[36m----  Could not Read  src/dotmoney/components.cljs   line:25 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/components.cljs [line 25, col 32] Unmatched delimiter ).[0m
+
+  [36m23[0m  [36m[:div {}[0m
+  [36m24[0m  [36m [:p {} "The value is now: " wallet][0m
+  [33m25[0m  [1m [:p "Change it here: "])[0m
+  [0m  [0m  [33m /Users/jesus/projects/dotmoney/src/dotmoney/components.cljs [line 25, col 32] Unmatched delimiter ).[0m
+  [36m26[0m  [36m  ; [:input {:type "text"[0m
+  [36m27[0m  [36m  ;         :value wallet[0m
+  [36m28[0m  [36m  ;         :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}]]])[0m
+
+[36m----  Reader Error : Please see src/dotmoney/components.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.914 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.028 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.877 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js

@@ -14,14 +14,15 @@
             {:on-click (fn [event](put! EVENTCHANNEL [:update-active-item {:active-item item}]))}
             (:display item)]])])
 
-(defn atom-input [value]
-  [:input {:type "text"
-           :value @value
-           :on-change #(reset! value (-> % .-target .-value))}])
+; (defn atom-input [wallet EVENTCHANNEL]
+;   [:input {:type "text"
+;            :value wallet
+;            :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])
 
-(defn shared-state [wallet]
-  (let [val wallet]
-    (fn []
-      [:div
-       [:p "The value is now: " wallet]
-       [:p "Change it here: " [atom-input wallet]]])))
+(defn shared-state [EVENTCHANNEL wallet]
+      [:div {}
+       [:p {} "The value is now: " wallet]
+       [:p "Change it here: "
+        [:input {:type "text"
+                :value wallet
+                :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}]]])

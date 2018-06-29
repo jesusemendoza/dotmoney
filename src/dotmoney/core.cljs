@@ -37,7 +37,7 @@
 (defn app []
   [:div {:class "app-container"}
     [header (:message @app-state )]
-    ; [shared-state (:wallet @app-state)]
+    [shared-state EVENTCHANNEL (:wallet @app-state)]
     [items-list EVENTCHANNEL (:items @app-state) (:active-item @app-state)]
    ])
 

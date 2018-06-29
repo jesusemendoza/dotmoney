@@ -150,3 +150,122 @@ Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:23  column:14  ----[0m
+
+  [1mNo such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing "r"[0m
+
+  [36m19[0m  [36m           :value @value[0m
+  [36m20[0m  [36m           :on-change #(reset! value (-> % .-target .-value))}])[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [][0m
+  [33m23[0m  [1m  (let [val (r/atom "foo")][0m
+  [0m  [0m  [33m             ^--- No such namespace: r, could not locate r.cljs, r.cljc, or JavaScript source providing "r"[0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+  [36m26[0m  [36m       [:p "The value is now: " @val][0m
+  [36m27[0m  [36m       [:p "Change it here: " [atom-input val]]])))[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:23  column:14  ----[0m
+
+  [1mUse of undeclared Var r/atom[0m
+
+  [36m19[0m  [36m           :value @value[0m
+  [36m20[0m  [36m           :on-change #(reset! value (-> % .-target .-value))}])[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m(defn shared-state [][0m
+  [33m23[0m  [1m  (let [val (r/atom "foo")][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var r/atom[0m
+  [36m24[0m  [36m    (fn [][0m
+  [36m25[0m  [36m      [:div[0m
+  [36m26[0m  [36m       [:p "The value is now: " @val][0m
+  [36m27[0m  [36m       [:p "Change it here: " [atom-input val]]])))[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.269 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.298 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.511 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.171 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.273 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.192 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.162 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.237 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.234 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.477 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.403 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.652 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:37 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 37, col 23] Unmatched delimiter ].[0m
+
+  [36m35[0m  [36m(defn app [][0m
+  [36m36[0m  [36m  [:div {:class "app-container"}[0m
+  [33m37[0m  [1m    [header (:message]]] @app-state )][0m
+  [0m  [0m  [33m    /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 37, col 23] Unmatched delimiter ].[0m
+  [36m38[0m  [36m    ; [shared-state (:wallet @app-state)][0m
+  [36m39[0m  [36m    [items-list EVENTCHANNEL (:items @app-state) (:active-item @app-state)][0m
+  [36m40[0m  [36m   ])[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.221 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.619 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:29 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 29, col 69] The map literal starting with :keys on line 28 column 24 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m27[0m  [36m                        (swap! app-state assoc-in [:active-item] active-item))}[0m
+  [36m28[0m  [36m  {:update-wallet (fn [{:keys [wallet][0m
+  [33m29[0m  [1m                        (swap! app-state assoc-in [:wallet] wallet)}])})[0m
+  [0m  [0m  [33m                        /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 29, col 69] The map literal starting with :keys on line 28 column 24 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m[0m
+  [36m32[0m  [36m(go[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.592 seconds.[0m
+[36m----  Could not Analyze  src/dotmoney/core.cljs   line:25  column:1  ----[0m
+
+  [1mToo many arguments to def at line 25 src/dotmoney/core.cljs[0m
+
+  [36m23[0m  [36m   :active-item {}}))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(def EVENTS[0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 25 src/dotmoney/core.cljs[0m
+  [36m26[0m  [36m {:update-active-item (fn [{:keys [active-item]}][0m
+  [36m27[0m  [36m                        (swap! app-state assoc-in [:active-item] active-item))}[0m
+  [36m28[0m  [36m  {:update-wallet (fn [{:keys [wallet]}][0m
+
+[36m----  Analysis Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.122 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js

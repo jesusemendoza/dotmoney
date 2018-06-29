@@ -13,3 +13,15 @@
            [:h1
             {:on-click (fn [event](put! EVENTCHANNEL [:update-active-item {:active-item item}]))}
             (:display item)]])])
+
+(defn atom-input [value]
+  [:input {:type "text"
+           :value @value
+           :on-change #(reset! value (-> % .-target .-value))}])
+
+(defn shared-state [wallet]
+  (let [val wallet]
+    (fn []
+      [:div
+       [:p "The value is now: " wallet]
+       [:p "Change it here: " [atom-input wallet]]])))

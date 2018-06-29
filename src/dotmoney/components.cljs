@@ -19,10 +19,23 @@
 ;            :value wallet
 ;            :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])
 
-(defn wallet-input [EVENTCHANNEL wallet]
-      [:div {}
-       [:p {} "The value is now: " wallet]
-       [:p "Change it here: "
-        [:input {:type "text"
-                :value wallet
-                :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}]]])
+(defn wallet-form [EVENTCHANNEL wallet]
+      [:div.wallet-input-container {}
+       [:p.wallet-title {} "Wallet Address "]
+       [:p.wallet-sub "Enter Here: "
+        [:input.wallet-input {:type "text"
+                        :value wallet
+                        :on-change (fn [event]
+                                     (put! EVENTCHANNEL [:update-wallet {:wallet js/event.target.value}]))}]]
+      ; [:p {} "Verify: " wallet]
+       ])
+
+(defn transaction-row [date usd eth eth-price gain-loss]
+  [:div.row-container {}
+    [:div.row {} date]
+    [:div.row {} usd]
+    [:div.row {} eth]
+    [:div.row {} eth-price]
+    [:div.row {} gain-loss]
+   ]
+  )

@@ -4,9 +4,8 @@
             [dotmoney.components :refer (header items-list wallet-form transaction-row)]
             [cljs.core.async :refer (chan put! <!)]))
 
+;allows println to generate a console.log in the browser console
 (enable-console-print!)
-
-(println "This text is printed from src/dotmoney/core.cljs. Go ahead and edit it and see reloading in action.")
 
 (def EVENTCHANNEL (chan))
 
@@ -29,7 +28,7 @@
                         (let [{wallet :wallet} value]
                         (swap! app-state assoc-in [:wallet] wallet)))
   :submit-wallet (fn [value]
-                   (println "yay it was submited"))
+                   (println value))
   })
 
 

@@ -1157,3 +1157,55 @@ Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:34  column:84  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/item[0m
+
+  [36m30[0m  [36m      ; [:p {} "Verify: " wallet][0m
+  [36m31[0m  [36m        [:div.submit-container {}[0m
+  [36m32[0m  [36m          [:div.submit-button {}[0m
+  [36m33[0m  [36m            [:p.submit-text[0m
+  [33m34[0m  [1m            {:on-click (fn [event](put! EVENTCHANNEL [:submit-wallet {:active-item item}]))}[0m
+  [0m  [0m  [33m                                                                                   ^--- Use of undeclared Var dotmoney.components/item[0m
+  [36m35[0m  [36m             "Sumbit"]]][0m
+  [36m36[0m  [36m       ])[0m
+  [36m37[0m  [36m[0m
+  [36m38[0m  [36m(defn transaction-row [date usd eth eth-price gain-loss][0m
+  [36m39[0m  [36m  [:div.row-container {}[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.36 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.891 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.018 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.075 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.972 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.962 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.175 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.006 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.529 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.085 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css

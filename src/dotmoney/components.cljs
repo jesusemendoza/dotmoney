@@ -21,13 +21,17 @@
 
 (defn wallet-form [EVENTCHANNEL wallet]
       [:div.wallet-input-container {}
-       [:p.wallet-title {} "Wallet Address "]
-       [:p.wallet-sub "Enter Here: "
-        [:input.wallet-input {:type "text"
-                        :value wallet
-                        :on-change (fn [event]
-                                     (put! EVENTCHANNEL [:update-wallet {:wallet js/event.target.value}]))}]]
+      [:p.wallet-title {} "Wallet Address "]
+      [:input.wallet-input {:type "text"
+                      :value wallet
+                      :on-change (fn [event]
+                                   (put! EVENTCHANNEL [:update-wallet {:wallet js/event.target.value}]))}]
       ; [:p {} "Verify: " wallet]
+        [:div.submit-container {}
+          [:div.submit-button {}
+            [:p.submit-text
+            {:on-click (fn [event](put! EVENTCHANNEL [:submit-wallet {:wallet wallet}]))}
+             "Submit"]]]
        ])
 
 (defn transaction-row [date usd eth eth-price gain-loss]

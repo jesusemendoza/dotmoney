@@ -10,7 +10,7 @@
   text-align: center;
 }
 .title {
-  font-size: 8vh;
+  font-size: 10vw;
   color: white;
   flex: 1;
   margin: auto;
@@ -22,14 +22,28 @@
   font-size: 6vw;
   margin: 4vw;
 }
-.wallet-sub {
-  font-size: 4vw;
-  margin-bottom: 6vw;
-}
+
 .wallet-input {
+  margin-bottom: 6vw;
   border: solid 1px gray;
   border-radius: 5px;
   font-size: 4vw;
+  width: 92%;
+  text-align: center;
+}
+
+.submit-button {
+  width: 35%;
+  background: green;
+  margin: auto;
+}
+.submit-text {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.submit-text:active {
+  background: orange;
+  color: white;
 }
 .active {
   background: blue;

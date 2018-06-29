@@ -80,3 +80,73 @@ notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.159 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/header.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.06 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.959 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/header.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.97 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/header.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.726 seconds.[0m
+[36m----  Could not Analyze  src/dotmoney/core.cljs  ----[0m
+
+  [1mNo such namespace: dotmoney.components, could not locate dotmoney/components.cljs, dotmoney/components.cljc, or JavaScript source providing "dotmoney.components" [0m
+
+[36m----  Analysis Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.316 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.235 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.518 seconds.[0m
+[36m----  Could not Read  src/dotmoney/header.cljs   line:5 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/header.cljs [line 5, col 11] Invalid keyword: :.[0m
+
+  [36m4[0m  [36m(defn header [message][0m
+  [33m5[0m  [1m  [:div {:}[0m
+  [0m [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/header.cljs [line 5, col 11] Invalid keyword: :.[0m
+  [36m6[0m  [36m   [:h1 {:class "title"} message]])[0m
+  [36m7[0m  [36m[0m
+  [36m8[0m  [36m(defn items-list [EVENTCHANNEL items active-item][0m
+
+[36m----  Reader Error : Please see src/dotmoney/header.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 0.917 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.007 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.464 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/reset.css
+Notifying browser that CSS file changed: resources/public/css/reset.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.231 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css

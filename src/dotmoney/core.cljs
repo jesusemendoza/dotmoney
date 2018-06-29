@@ -1,25 +1,40 @@
 (ns dotmoney.core
-    (:require [reagent.core :as reagent :refer [atom]]))
+  (:require-macros [cljs.core.async.macros :refer (go)])
+  (:require [reagent.core :as reagent]
+            [dotmoney.header :refer (header items-list)]
+            [cljs.core.async :refer (chan put! <!)]))
 
 (enable-console-print!)
 
 (println "This text is printed from src/dotmoney/core.cljs. Go ahead and edit it and see reloading in action.")
 
-;; define your app data so that it doesn't get over-written on reload
+(def EVENTCHANNEL (chan))
 
-(defonce app-state (atom {:text "Hello world!"}))
+;similar to the main state used in react
+(defonce app-state
+ (reagent/atom
+  {:message "I am the new title"
+   :items [{:display "item1"}
+           {:display "item2"}
+           {:display "item3"}
+           {:display "item4"}
+           {:display "item5"}]
+   :active-item {}}))
+
+(def EVENTS
+ {:update-active-item (fn [{:keys [active-item]}]
+                        (swap! app-state assoc-in [:active-item] active-item))})
 
 
-(defn hello-world []
-  [:div
-   [:h1 (:text @app-state)]
-   [:h3 "Edit this and watch it change!"]])
+(go
+ (while true
+   (let [[event-name event-data] (<! EVENTCHANNEL)]
+     ((event-name EVENTS) event-data))))
 
-(reagent/render-component [hello-world]
-                          (. js/document (getElementById "app")))
+(defn app []
+  [:div {:class "app-container"}
+    [header (:message @app-state )]
+    [items-list EVENTCHANNEL (:items @app-state) (:active-item @app-state)]
+   ])
 
-(defn on-js-reload []
-  ;; optionally touch your app-state to force rerendering depending on
-  ;; your application
-  ;; (swap! app-state update-in [:__figwheel_counter] inc)
-)
+(reagent/render [app] (js/document.querySelector "#app") )

@@ -28,6 +28,9 @@
                         :on-change (fn [event]
                                      (put! EVENTCHANNEL [:update-wallet {:wallet js/event.target.value}]))}]]
       ; [:p {} "Verify: " wallet]
+        [:div.submit-container {}
+          [:div.submit-button {}
+            [:p.submit-text {} "Sumbit"]]]
        ])
 
 (defn transaction-row [date usd eth eth-price gain-loss]

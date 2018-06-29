@@ -31,6 +31,20 @@
   border-radius: 5px;
   font-size: 4vw;
 }
+
+.submit-button {
+  width: 35%;
+  background: green;
+  margin: auto;
+}
+.submit-text {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.submit-text:active {
+  background: orange;
+  color: white;
+}
 .active {
   background: blue;
 }

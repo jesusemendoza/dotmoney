@@ -1,7 +1,7 @@
 (ns dotmoney.core
   (:require-macros [cljs.core.async.macros :refer (go)])
   (:require [reagent.core :as reagent]
-            [dotmoney.header :refer (header items-list)]
+            [dotmoney.components :refer (header items-list)]
             [cljs.core.async :refer (chan put! <!)]))
 
 (enable-console-print!)
@@ -13,7 +13,7 @@
 ;similar to the main state used in react
 (defonce app-state
  (reagent/atom
-  {:message "I am the new title"
+  {:message "dotMoney"
    :items [{:display "item1"}
            {:display "item2"}
            {:display "item3"}

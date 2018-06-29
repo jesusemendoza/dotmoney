@@ -15,7 +15,33 @@
   flex: 1;
   margin: auto;
 }
-
+.wallet-input-container {
+  text-align: center;
+}
+.wallet-title {
+  font-size: 6vw;
+  margin: 4vw;
+}
+.wallet-sub {
+  font-size: 4vw;
+  margin-bottom: 6vw;
+}
+.wallet-input {
+  border: solid 1px gray;
+  border-radius: 5px;
+  font-size: 4vw;
+}
 .active {
   background: blue;
+}
+
+.row-container {
+  text-align: center;
+  display: flex;
+  margin: 1em;
+}
+.row {
+  flex: 1;
+  border: solid 1px gray;
+  font-size: 4vw;
 }

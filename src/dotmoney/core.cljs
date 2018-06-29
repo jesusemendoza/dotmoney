@@ -1,7 +1,7 @@
 (ns dotmoney.core
   (:require-macros [cljs.core.async.macros :refer (go)])
   (:require [reagent.core :as reagent]
-            [dotmoney.components :refer (header items-list shared-state)]
+            [dotmoney.components :refer (header items-list wallet-input)]
             [cljs.core.async :refer (chan put! <!)]))
 
 (enable-console-print!)
@@ -25,8 +25,10 @@
 (def EVENTS
  {:update-active-item (fn [{:keys [active-item]}]
                         (swap! app-state assoc-in [:active-item] active-item))
-  :update-wallet (fn [{:keys [wallet]}]
-                        (swap! app-state assoc-in [:wallet] wallet))})
+  :update-wallet (fn [previous-wallet]
+                        (let [{wallet :wallet} previous-wallet]
+                          (println wallet)
+                        (swap! app-state assoc-in [:wallet] wallet )))})
 
 
 (go
@@ -37,7 +39,7 @@
 (defn app []
   [:div {:class "app-container"}
     [header (:message @app-state )]
-    [shared-state EVENTCHANNEL (:wallet @app-state)]
+    [wallet-input EVENTCHANNEL (:wallet @app-state)]
     [items-list EVENTCHANNEL (:items @app-state) (:active-item @app-state)]
    ])
 

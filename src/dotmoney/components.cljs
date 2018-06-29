@@ -19,7 +19,7 @@
 ;            :value wallet
 ;            :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])
 
-(defn shared-state [EVENTCHANNEL wallet]
+(defn wallet-input [EVENTCHANNEL wallet]
       [:div {}
        [:p {} "The value is now: " wallet]
        [:p "Change it here: "

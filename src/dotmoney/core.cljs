@@ -2,13 +2,39 @@
   (:require-macros [cljs.core.async.macros :refer (go)])
   (:require [reagent.core :as reagent]
             [dotmoney.components :refer (header items-list wallet-form transaction-row)]
-            [cljs.core.async :refer (chan put! <!)]))
+            [cljs.core.async :refer (chan put! <!)]
+            [ajax.core :refer [GET POST]]))
 
 ;allows println to generate a console.log in the browser console
 (enable-console-print!)
 
 (def EVENTCHANNEL (chan))
+;async stuff
+(defn handler [response]
+  (println response))
 
+(defn error-handler [{:keys [status status-text]}]
+  (println "error"))
+
+(POST "http://localhost:3000/api/v1/wallet"
+  {:params {:wallet "0xc1A30fd9f85D48c38a8f8733d450D059B7BbA1B5"}
+   :handler handler
+   :format :json
+   :error-handler error-handler})
+
+
+; (defn handler2 [[ok response]]
+;   (if ok
+;     (.log js/console (str response))
+;     (.error js/console (str response))))
+
+; (ajax-request
+;  {:uri "http://localhost:3000/api/v1/wallet"
+;   :method :post
+;   :params {:wallet "0xc1A30fd9f85D48c38a8f8733d450D059B7BbA1B5"}
+;   :handler handler2
+;   :format (json-request-format)
+;   :response-format (json-response-format {:keywords? true})})   
 ;similar to the main state used in react
 (defonce app-state
  (reagent/atom

@@ -52,7 +52,7 @@
  {:update-active-item (fn [{:keys [active-item]}]
                         (swap! app-state assoc-in [:active-item] active-item))
   :update-wallet (fn [value]
-                        (let [{wallet :wallet} value]
+                    (let [{wallet :wallet} value]
                         (swap! app-state assoc-in [:wallet] wallet)))
   :submit-wallet (fn [value]
                    (let [{wallet :wallet} value]

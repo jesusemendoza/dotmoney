@@ -1,5 +1,5 @@
 (ns dotmoney.components
-  (:require [cljs.core.async :refer (chan put! <!)]))
+  (:require [cljs.core.async :refer (put!)]))
 
 (defn header [message]
   [:div {:class "title-container"}
@@ -43,3 +43,15 @@
     [:div.row {} gain-loss]
    ]
   )
+
+  (defn transaction-list [EVENTCHANNEL transactions]
+    [:div.transactions-container {}
+        (for [transaction transactions]
+          ^{:key transaction}
+                [transaction-row 
+                    (:date transaction)
+                    (:usd transaction)
+                    (:amount transaction)
+                    (:direction transaction)
+                    (:txId transaction)
+                    (:cinderella transaction)])])

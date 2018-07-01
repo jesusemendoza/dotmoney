@@ -1531,3 +1531,109 @@ notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/
 Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.385 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.319 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.506 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:56  column:33  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/transa[0m
+
+  [36m52[0m  [36m(:date transaction)[0m
+  [36m53[0m  [36m(:usd transaction)[0m
+  [36m54[0m  [36m(:amount transaction)[0m
+  [36m55[0m  [36m(:eth-price transaction)[0m
+  [33m56[0m  [1m(:direction transa)])])[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var dotmoney.components/transa[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:50  column:18  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/item[0m
+
+  [36m47[0m  [36m(defn transaction-list [EVENTCHANNEL transactions][0m
+  [36m48[0m  [36m  [:div.transactions-container {}[0m
+  [36m49[0m  [36m      (for [transaction transactions][0m
+  [33m50[0m  [1m        ^{:key item}[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var dotmoney.components/item[0m
+  [36m51[0m  [36m              [transaction-row [0m
+  [36m52[0m  [36m                  (:date transaction)[0m
+  [36m53[0m  [36m                  (:usd transaction)[0m
+  [36m54[0m  [36m                  (:amount transaction)[0m
+  [36m55[0m  [36m                  (:eth-price transaction)[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:56  column:33  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/transa[0m
+
+  [36m52[0m  [36m(:date transaction)[0m
+  [36m53[0m  [36m(:usd transaction)[0m
+  [36m54[0m  [36m(:amount transaction)[0m
+  [36m55[0m  [36m(:eth-price transaction)[0m
+  [33m56[0m  [1m(:direction transa)])])[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var dotmoney.components/transa[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:50  column:18  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/item[0m
+
+  [36m47[0m  [36m(defn transaction-list [EVENTCHANNEL transactions][0m
+  [36m48[0m  [36m  [:div.transactions-container {}[0m
+  [36m49[0m  [36m      (for [transaction transactions][0m
+  [33m50[0m  [1m        ^{:key item}[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var dotmoney.components/item[0m
+  [36m51[0m  [36m              [transaction-row [0m
+  [36m52[0m  [36m                  (:date transaction)[0m
+  [36m53[0m  [36m                  (:usd transaction)[0m
+  [36m54[0m  [36m                  (:amount transaction)[0m
+  [36m55[0m  [36m                  (:eth-price transaction)[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.608 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:50  column:18  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/item[0m
+
+  [36m47[0m  [36m(defn transaction-list [EVENTCHANNEL transactions][0m
+  [36m48[0m  [36m  [:div.transactions-container {}[0m
+  [36m49[0m  [36m      (for [transaction transactions][0m
+  [33m50[0m  [1m        ^{:key item}[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var dotmoney.components/item[0m
+  [36m51[0m  [36m              [transaction-row [0m
+  [36m52[0m  [36m                  (:date transaction)[0m
+  [36m53[0m  [36m                  (:usd transaction)[0m
+  [36m54[0m  [36m                  (:amount transaction)[0m
+  [36m55[0m  [36m                  (:direction transaction)[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[36m----  Compiler Warning on   src/dotmoney/components.cljs   line:50  column:18  ----[0m
+
+  [1mUse of undeclared Var dotmoney.components/item[0m
+
+  [36m47[0m  [36m(defn transaction-list [EVENTCHANNEL transactions][0m
+  [36m48[0m  [36m  [:div.transactions-container {}[0m
+  [36m49[0m  [36m      (for [transaction transactions][0m
+  [33m50[0m  [1m        ^{:key item}[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var dotmoney.components/item[0m
+  [36m51[0m  [36m              [transaction-row [0m
+  [36m52[0m  [36m                  (:date transaction)[0m
+  [36m53[0m  [36m                  (:usd transaction)[0m
+  [36m54[0m  [36m                  (:amount transaction)[0m
+  [36m55[0m  [36m                  (:direction transaction)[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/components.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.389 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.124 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.237 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js

@@ -1503,3 +1503,31 @@ notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/
 Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.037 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.444 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.266 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.799 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:60 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 60, col 21] Unmatched delimiter ).[0m
+
+  [36m58[0m  [36m                 (let [{wallet :wallet} value][0m
+  [36m59[0m  [36m                      (wallet-request value)))[0m
+  [33m60[0m  [1m                 )[0m
+  [0m  [0m  [33m                 /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 60, col 21] Unmatched delimiter ).[0m
+  [36m61[0m  [36m})[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.076 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.265 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.385 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js

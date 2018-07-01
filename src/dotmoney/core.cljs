@@ -16,11 +16,12 @@
 (defn error-handler [{:keys [status status-text]}]
   (println "error"))
 
+(defn wallet-request [wallet-id]
 (POST "http://localhost:3000/api/v1/wallet"
-  {:params {:wallet "0xc1A30fd9f85D48c38a8f8733d450D059B7BbA1B5"}
+  {:params {:wallet wallet-id}
    :handler handler
    :format :json
-   :error-handler error-handler})
+   :error-handler error-handler}))
 
 
 ; (defn handler2 [[ok response]]
@@ -39,7 +40,7 @@
 (defonce app-state
  (reagent/atom
   {:message "dotMoney"
-   :wallet "0x"
+   :wallet "0xc1A30fd9f85D48c38a8f8733d450D059B7BbA1B5"
    :items [{:display "item1"}
            {:display "item2"}
            {:display "item3"}
@@ -54,7 +55,8 @@
                         (let [{wallet :wallet} value]
                         (swap! app-state assoc-in [:wallet] wallet)))
   :submit-wallet (fn [value]
-                   (println value))
+                   (let [{wallet :wallet} value]
+                        (wallet-request wallet)))    
   })
 
 

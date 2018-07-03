@@ -1,2 +1,2 @@
 
-web: lein cljsbuid once min
+web: lein cljsbuild once min

@@ -19,7 +19,7 @@
 ;            :value wallet
 ;            :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])
 
-(defn wallet-form [EVENTCHANNEL wallet active-wallet]
+(defn wallet-form [EVENTCHANNEL wallet active-wallet cap-gains-loss]
       [:div.wallet-input-container {}
       [:p.wallet-title {} "Wallet Address "]
       [:input.wallet-input {:type "text"
@@ -32,6 +32,8 @@
             {:on-click (fn [event](put! EVENTCHANNEL [:submit-wallet {:wallet wallet}]))}
              "Submit"]]]
        [:p.active-wallet {} (if(not= active-wallet "" ) (concat "Wallet:   " active-wallet))]
+       [:p.cap-gains-loss {} 
+        (if (not= active-wallet "") (concat (if(> cap-gains-loss 0)"Gain: " "Loss: ") "$ " cap-gains-loss))]
        ])
 
 (defn transaction-row [date direction eth-price eth]

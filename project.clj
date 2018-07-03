@@ -46,8 +46,9 @@
                ;; lein cljsbuild once min
                {:id "min"
                 :source-paths ["src"]
-                :compiler {:output-to "resources/public/js/compiled/dotmoney.js"
+                :compiler {
                            :main dotmoney.core
+                           :output-to "resources/public/js/compiled/dotmoney.js"
                            :optimizations :advanced
                            :pretty-print false}}]}
 

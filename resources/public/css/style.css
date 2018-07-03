@@ -36,6 +36,7 @@
   width: 35%;
   background: green;
   margin: auto;
+  margin-bottom: 1em;
 }
 .submit-text {
   padding-top: 0.5em;
@@ -50,12 +51,26 @@
 }
 
 .row-container {
-  text-align: center;
-  display: flex;
-  margin: 1em;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 90%;
 }
 .row {
-  flex: 1;
-  border: solid 1px gray;
-  font-size: 4vw;
+    border: solid 1px gray;
+    font-size: 3.2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+.row.row1 {
+    width: 8%;
+}
+.row.row2 {
+    width: 12%;
+}
+.row.row3 {
+    width: 30%;
+}
+.row.row4 {
+    width: 50%;
 }

@@ -19,28 +19,27 @@
 ;            :value wallet
 ;            :on-change (fn [event](put! EVENTCHANNEL [:update-wallet {:wallet wallet}]))}])
 
-(defn wallet-form [EVENTCHANNEL wallet]
+(defn wallet-form [EVENTCHANNEL wallet active-wallet]
       [:div.wallet-input-container {}
       [:p.wallet-title {} "Wallet Address "]
       [:input.wallet-input {:type "text"
                       :value wallet
                       :on-change (fn [event]
-                                   (put! EVENTCHANNEL [:update-wallet {:wallet js/event.target.value}]))}]
-      ; [:p {} "Verify: " wallet]
+                                   (put! EVENTCHANNEL [:wallet-input {:wallet js/event.target.value}]))}]
         [:div.submit-container {}
           [:div.submit-button {}
             [:p.submit-text
             {:on-click (fn [event](put! EVENTCHANNEL [:submit-wallet {:wallet wallet}]))}
              "Submit"]]]
+       [:p {} (if(= active-wallet "") "Verify: " active-wallet)]
        ])
 
 (defn transaction-row [date usd eth eth-price gain-loss]
   [:div.row-container {}
-    [:div.row {} date]
-    [:div.row {} usd]
-    [:div.row {} eth]
-    [:div.row {} eth-price]
-    [:div.row {} gain-loss]
+    [:div.row {:class "row1"} date]
+    [:div.row {:class "row2"} usd]
+    [:div.row {:class "row3"} eth]
+    [:div.row {:class "row4"} eth-price]
    ]
   )
 
@@ -49,9 +48,8 @@
         (for [transaction transactions]
           ^{:key transaction}
                 [transaction-row 
-                    (:date transaction)
+                    (:txId transaction)
+                    (:direction transaction)
                     (:usd transaction)
                     (:amount transaction)
-                    (:direction transaction)
-                    (:txId transaction)
-                    (:cinderella transaction)])])
+                    ])])

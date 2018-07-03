@@ -31,15 +31,15 @@
             [:p.submit-text
             {:on-click (fn [event](put! EVENTCHANNEL [:submit-wallet {:wallet wallet}]))}
              "Submit"]]]
-       [:p {} (if(= active-wallet "") "Verify: " active-wallet)]
+       [:p.active-wallet {} (if(not= active-wallet "" ) (concat "Wallet:   " active-wallet))]
        ])
 
-(defn transaction-row [date usd eth eth-price gain-loss]
-  [:div.row-container {}
+(defn transaction-row [date direction eth-price eth]
+  [:div.row-container {:class (if(= direction "out") "eth-out" (if(= direction "in") "eth-in" "title-row"))}
     [:div.row {:class "row1"} date]
-    [:div.row {:class "row2"} usd]
-    [:div.row {:class "row3"} eth]
-    [:div.row {:class "row4"} eth-price]
+    [:div.row {:class "row2"} direction]
+    [:div.row {:class "row3"} eth-price]
+    [:div.row {:class "row4"} eth]
    ]
   )
 

@@ -2928,3 +2928,201 @@ notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/
 Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.565 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.536 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.168 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.516 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.386 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.413 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/core.cljs   line:40  column:60  ----[0m
+
+  [1mUse of undeclared Var dotmoney.core/wallet[0m
+
+  [36m36[0m  [36m                      (wallet-request EVENTCHANNEL wallet)))[0m
+  [36m37[0m  [36m:update-transactions (fn [value][0m
+  [36m38[0m  [36m               (println value)[0m
+  [36m39[0m  [36m               (swap! app-state assoc-in [:transactions] value)[0m
+  [33m40[0m  [1m              (swap! app-state assoc-in [:active-wallet] wallet @app-state)[0m
+  [0m  [0m  [33m                                                         ^--- Use of undeclared Var dotmoney.core/wallet[0m
+  [36m41[0m  [36m              (swap! app-state assoc-in [:transactions] value)[0m
+  [36m42[0m  [36m              ;  (let [{transactions :transactions} value][0m
+  [36m43[0m  [36m              ;    (swap! app-state assoc-in [:transactions] (.parse js/JSON transactions))[0m
+  [36m44[0m  [36m              ;    (println transactions))[0m
+  [36m45[0m  [36m                       )    [0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.347 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/core.cljs   line:40  column:60  ----[0m
+
+  [1mUse of undeclared Var dotmoney.core/wallet[0m
+
+  [36m36[0m  [36m                      (wallet-request EVENTCHANNEL wallet)))[0m
+  [36m37[0m  [36m:update-transactions (fn [value][0m
+  [36m38[0m  [36m               (println value)[0m
+  [36m39[0m  [36m               (swap! app-state assoc-in [:transactions] value)[0m
+  [33m40[0m  [1m              (swap! app-state assoc-in [:active-wallet] wallet @app-state)[0m
+  [0m  [0m  [33m                                                         ^--- Use of undeclared Var dotmoney.core/wallet[0m
+  [36m41[0m  [36m              (swap! app-state assoc-in [:wallet] "")[0m
+  [36m42[0m  [36m              ;  (let [{transactions :transactions} value][0m
+  [36m43[0m  [36m              ;    (swap! app-state assoc-in [:transactions] (.parse js/JSON transactions))[0m
+  [36m44[0m  [36m              ;    (println transactions))[0m
+  [36m45[0m  [36m                       )    [0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.311 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/core.cljs   line:40  column:64  ----[0m
+
+  [1mUse of undeclared Var dotmoney.core/wallet[0m
+
+  [36m36[0m  [36m                      (wallet-request EVENTCHANNEL wallet)))[0m
+  [36m37[0m  [36m:update-transactions (fn [value][0m
+  [36m38[0m  [36m                  (println value)[0m
+  [36m39[0m  [36m                  (swap! app-state assoc-in [:transactions] value)[0m
+  [33m40[0m  [1m                  (swap! app-state assoc-in [:active-wallet] wallet @app-state)[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var dotmoney.core/wallet[0m
+  [36m41[0m  [36m                  (swap! app-state assoc-in [:wallet] "")[0m
+  [36m42[0m  [36m              ;  (let [{transactions :transactions} value][0m
+  [36m43[0m  [36m              ;    (swap! app-state assoc-in [:transactions] (.parse js/JSON transactions))[0m
+  [36m44[0m  [36m              ;    (println transactions))[0m
+  [36m45[0m  [36m                       )    [0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.253 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[36m----  Compiler Warning on   src/dotmoney/core.cljs   line:40  column:64  ----[0m
+
+  [1mUse of undeclared Var dotmoney.core/wallet[0m
+
+  [36m36[0m  [36m                      (wallet-request EVENTCHANNEL wallet)))[0m
+  [36m37[0m  [36m:update-transactions (fn [value][0m
+  [36m38[0m  [36m                  (println value)[0m
+  [36m39[0m  [36m                  (swap! app-state assoc-in [:transactions] value)[0m
+  [33m40[0m  [1m                  (swap! app-state assoc-in [:active-wallet] wallet @app-state)[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var dotmoney.core/wallet[0m
+  [36m41[0m  [36m              ;  (let [{transactions :transactions} value][0m
+  [36m42[0m  [36m              ;    (swap! app-state assoc-in [:transactions] (.parse js/JSON transactions))[0m
+  [36m43[0m  [36m              ;    (println transactions))[0m
+  [36m44[0m  [36m                       )    [0m
+  [36m45[0m  [36m})[0m
+
+[36m----  Compiler Warning : Please see src/dotmoney/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.483 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.289 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.317 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.346 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.284 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.336 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.283 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.244 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.304 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.55 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.736 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.314 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.447 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.753 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.283 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.269 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.84 seconds.[0m
+[36m----  Could not Analyze  src/dotmoney/components.cljs   line:38  column:31  ----[0m
+
+  [1mToo few arguments to if at line 38 /Users/jesus/projects/dotmoney/src/dotmoney/components.cljs[0m
+
+  [36m37[0m  [36m(defn transaction-row [date direction eth eth-price gain-loss][0m
+  [33m38[0m  [1m  [:div.row-container {:class (if(= ))}[0m
+  [0m  [0m  [33m                              ^--- Too few arguments to if at line 38 /Users/jesus/projects/dotmoney/src/dotmoney/components.cljs[0m
+  [36m39[0m  [36m    [:div.row {:class "row1"} date][0m
+  [36m40[0m  [36m    [:div.row {:class "row2"} direction][0m
+  [36m41[0m  [36m    [:div.row {:class "row3"} eth][0m
+
+[36m----  Analysis Error : Please see src/dotmoney/components.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.191 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 2.565 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.607 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.4 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.318 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.887 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.836 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js

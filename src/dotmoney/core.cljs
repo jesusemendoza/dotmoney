@@ -20,7 +20,8 @@
            {:display "item3"}
            {:display "item4"}
            {:display "item5"}]
-   :active-item {}}))
+   :active-item {}
+   :cap-gains-loss 0}))
  
 (def EVENTCHANNEL (chan))
 
@@ -36,9 +37,13 @@
                         (wallet-request EVENTCHANNEL wallet)))
   :update-transactions (fn [value]
                     (println value)
-                    (swap! app-state assoc-in [:transactions] value)
-                    (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))
-                    (swap! app-state assoc-in [:wallet] "0x"))    
+                    (let [{transactions :transactions} value]
+                        (swap! app-state assoc-in [:transactions] transactions))
+                    (let [{wallet :address} value]
+                        (swap! app-state assoc-in [:active-wallet] wallet))
+                    (let [{cap-gains-loss :gains} value]
+                        (swap! app-state assoc-in [:cap-gains-loss] cap-gains-loss))          
+                         )    
   })
 
 (go
@@ -52,7 +57,7 @@
 (defn app []
   [:div {:class "app-container"}
     [header (:message @app-state )]
-    [wallet-form EVENTCHANNEL (:wallet @app-state) (:active-wallet @app-state)]
+    [wallet-form EVENTCHANNEL (:wallet @app-state) (:active-wallet @app-state) (:cap-gains-loss @app-state)]
     (if(not= (:active-wallet @app-state) "")[transaction-row "ID" "I/O" "USD / 1 ETH" "ETH Amount"])
     [transaction-list EVENTCHANNEL (:transactions @app-state)]
     ; [items-list EVENTCHANNEL (:items @app-state) (:active-item @app-state)]

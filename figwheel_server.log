@@ -3126,3 +3126,144 @@ Notifying browser that CSS file changed: resources/public/css/style.css
 Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.836 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.661 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:42 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 42, col 4] Unmatched delimiter }.[0m
+
+  [36m40[0m  [36m                    ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m41[0m  [36m                    ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+  [33m42[0m  [1m  })[0m
+  [0m  [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 42, col 4] Unmatched delimiter }.[0m
+  [36m43[0m  [36m[0m
+  [36m44[0m  [36m(go[0m
+  [36m45[0m  [36m (while true[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.631 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:38 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 38, col 38] Unmatched delimiter ).[0m
+
+  [36m36[0m  [36m                      (wallet-request EVENTCHANNEL wallet)))[0m
+  [36m37[0m  [36m:update-transactions (fn [value][0m
+  [33m38[0m  [1m                  (println value)))[0m
+  [0m  [0m  [33m                  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 38, col 38] Unmatched delimiter ).[0m
+  [36m39[0m  [36m                  ; (swap! app-state assoc-in [:transactions] value)[0m
+  [36m40[0m  [36m                  ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m41[0m  [36m                  ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.443 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.376 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.84 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:43 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m41[0m  [36m                    ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m42[0m  [36m                    ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+  [33m43[0m  [1m  })[0m
+  [0m  [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(go[0m
+  [36m46[0m  [36m (while true[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.838 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:43 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m41[0m  [36m                    ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m42[0m  [36m                    ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+  [33m43[0m  [1m  })[0m
+  [0m  [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(go[0m
+  [36m46[0m  [36m (while true[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.711 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:43 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m41[0m  [36m                    ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m42[0m  [36m                    ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+  [33m43[0m  [1m  })[0m
+  [0m  [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] The map literal starting with :update-active-item on line 29 column 2 contains 9 form(s). Map literals must contain an even number of forms.[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(go[0m
+  [36m46[0m  [36m (while true[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.672 seconds.[0m
+[36m----  Could not Read  src/dotmoney/core.cljs   line:43 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] Unmatched delimiter }.[0m
+
+  [36m41[0m  [36m                    ; (swap! app-state assoc-in [:active-wallet] (:wallet @app-state))[0m
+  [36m42[0m  [36m                    ; (swap! app-state assoc-in [:wallet] "0x"))    [0m
+  [33m43[0m  [1m  })[0m
+  [0m  [0m  [33m  /Users/jesus/projects/dotmoney/src/dotmoney/core.cljs [line 43, col 4] Unmatched delimiter }.[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(go[0m
+  [36m46[0m  [36m (while true[0m
+
+[36m----  Reader Error : Please see src/dotmoney/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.847 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.949 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.209 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.533 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.427 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/core.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 1.034 seconds.[0m
+[36m----  Could not Read  src/dotmoney/components.cljs   line:35 ----[0m
+
+  [1m/Users/jesus/projects/dotmoney/src/dotmoney/components.cljs [line 35, col 109] Unmatched delimiter ].[0m
+
+  [36m33[0m  [36m             "Submit"]]][0m
+  [36m34[0m  [36m       [:p.active-wallet {} (if(not= active-wallet "" ) (concat "Wallet:   " active-wallet))][0m
+  [33m35[0m  [1m       [:p.cap-gains-loss {} (if (not= active-wallet "") (concat (if(> cap-gains-loss 0)"Gain: " "Loss: "))][0m
+  [0m  [0m  [33m       /Users/jesus/projects/dotmoney/src/dotmoney/components.cljs [line 35, col 109] Unmatched delimiter ].[0m
+  [36m36[0m  [36m       ])[0m
+  [36m37[0m  [36m[0m
+  [36m38[0m  [36m(defn transaction-row [date direction eth-price eth][0m
+
+[36m----  Reader Error : Please see src/dotmoney/components.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.811 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.518 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.494 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.551 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
+Compiling build :dev to "resources/public/js/compiled/dotmoney.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/dotmoney.js" in 1.939 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/dotmoney/components.js
